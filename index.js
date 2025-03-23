@@ -18,5 +18,5 @@ function startGame() {
     isAlive = false;
   }
   messageEl.textContent = message;
-  sumEl.textContent = sum;
+  sumEl.textContent = "sum: " + sum;
 }
