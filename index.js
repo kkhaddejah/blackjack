@@ -26,3 +26,11 @@ function startGame() {
 function newCard() {
   console.log("Drawing a new card from the deck!");
 }
+
+function newCard() {
+  console.log("Drawing a new card from the deck!");
+  let cardVar = 2;
+  sum = sum + cardVar;
+
+  startGame();
+}
