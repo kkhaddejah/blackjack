@@ -8,7 +8,12 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 
+// Create a new function called startGame() that calls renderGame()
 function startGame() {
+  renderGame();
+}
+
+function renderGame() {
   if (sum <= 20) {
     message = "Do you want to draw a new card?";
   } else if (sum === 21) {
@@ -32,5 +37,5 @@ function newCard() {
   let cardVar = 2;
   sum = sum + cardVar;
 
-  startGame();
+  renderGame();
 }
